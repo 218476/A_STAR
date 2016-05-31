@@ -13,9 +13,10 @@ MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
 {
 
+
     this->setFixedHeight(140);
     this->setFixedWidth(300);
-    this->setWindowTitle("Jak się zgubię");
+    this->setWindowTitle(QString :: fromUtf8("Jak się zgubię"));
     //this->setStyleSheet("background-color: rgb(234,252,255);");
 
     line = new QFrame(this);
@@ -26,7 +27,7 @@ MainWindow::MainWindow(QWidget *parent)
     stops_list = new QStringList();
     for(int i = 1; i < LICZBA_PRZYSTANKOW; i++)
     {
-        *stops_list << QString::fromStdString(stops_name_list[i]);
+        *stops_list << QString::fromUtf8(stops_name_list[i].c_str());
     }
 
 
@@ -35,7 +36,7 @@ MainWindow::MainWindow(QWidget *parent)
 
     from_label = new QLabel(this);
     from_label->setGeometry(10,10,280,20);
-    from_label->setText("Stacja początkowa");
+    from_label->setText(QString :: fromUtf8("Stacja początkowa"));
 
     from_line = new QLineEdit(this);
     from_line->setGeometry(10,30,280,20);
@@ -43,7 +44,7 @@ MainWindow::MainWindow(QWidget *parent)
 
     to_label = new QLabel(this);
     to_label->setGeometry(10,50,280,20);
-    to_label->setText("Stacja końcowa");
+    to_label->setText(QString :: fromUtf8("Stacja końcowa"));
 
     to_line = new QLineEdit(this);
     to_line->setGeometry(10,70,280,20);
@@ -51,7 +52,7 @@ MainWindow::MainWindow(QWidget *parent)
 
     find = new QPushButton(this);
     find->setGeometry(80,100,120,35);
-    find->setText("Znajdź drogę");
+    find->setText(QString :: fromUtf8("Znajdź drogę"));
 
     travel_time = new QLabel(this);
 
@@ -84,10 +85,10 @@ void MainWindow::Find()
 
     for(int i = 1; i < LICZBA_PRZYSTANKOW; i++)
     {
-        if(QString::fromStdString(stops_name_list[i]) == from_line->text())
+        if(QString::fromUtf8(stops_name_list[i].c_str()) == from_line->text())
             from_id = i;
 
-        if(QString::fromStdString(stops_name_list[i]) == to_line->text())
+        if(QString::fromUtf8(stops_name_list[i].c_str()) == to_line->text())
             to_id = i;
     }
 
@@ -127,7 +128,7 @@ void MainWindow::Find()
     for(int i = 0;i < s; i++)
     {
         if(i < STOP_LABELS_AMOUNT)
-            stops[i]->setText(QString::fromStdString(stops_name_list[s1.pop()]));
+            stops[i]->setText(QString::fromUtf8(stops_name_list[s1.pop()].c_str()));
     }
 
     s2.pop();
@@ -143,7 +144,7 @@ void MainWindow::Find()
     this->setFixedHeight(170 + s * 20);
 
     travel_time->setGeometry(10,150 + s * 20,280,20);
-    travel_time->setText("Całkowity czas podróży: " + QString::number(time) + "'");
+    travel_time->setText(QString::fromUtf8("Całkowity czas podróży: ") + QString::number(time) + "'");
 
     for (int i=0;i<=LICZBA_PRZYSTANKOW;i++)
         delete[] macierz[i];

@@ -35,7 +35,7 @@ stack graph::get_neighbors(int x)
   }
   else
   {
-      throw "out of range target for get neighbors!";
+      //throw "out of range target for get neighbors!";
   }
 }
 
@@ -51,7 +51,7 @@ bool graph::is_connected(int x, int y)
             return 0;
     }
   else 
-    throw "out of range target for connection check";
+    //throw "out of range target for connection check";
   return 0;
 }
 

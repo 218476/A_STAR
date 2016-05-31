@@ -12,6 +12,7 @@
 #include <QStringList>
 #include <QMessageBox>
 #include <QFrame>
+#include <QTextCodec>
 
 extern std::string stops_name_list[];
 
@@ -28,7 +29,7 @@ class MainWindow : public QMainWindow
     QLabel*         from_label;
     QLabel*         to_label;
     QLabel*         stops       [STOP_LABELS_AMOUNT];
-    QLabel*         stops_time  [STOP_LABELS_AMOUNT - 1];
+    QLabel*         stops_time  [STOP_LABELS_AMOUNT];
     QLabel*         travel_time;
     QFrame*         line;
 

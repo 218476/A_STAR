@@ -4,7 +4,10 @@
 #
 #-------------------------------------------------
 
-CONFIG += c++11
+CONFIG += c++11 DEBUG
+QMAKE_CXXFLAGS += -std=c++11
+OBJECTS_DIR = obj
+MOC_DIR = obj
 
 QT       += core gui
 
@@ -22,7 +25,6 @@ SOURCES += Src/Gui/mainwindow.cpp \
     Src/AStar/stack.cpp
 
 HEADERS  += Inc/Gui/mainwindow.h \
-    Inc/Gui/stops_name.h \
     Inc/stops_name.h \
     Inc/AStar/astar.h \
     Inc/AStar/graph.h \
