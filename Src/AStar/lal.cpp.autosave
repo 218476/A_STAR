@@ -42,6 +42,7 @@ s=s1.size();
 for(i=0;i<s;i++)
 cout<<s1.pop()<<"->";
 cout<<endl;
-*/
+
   return 0;
 };
+*/

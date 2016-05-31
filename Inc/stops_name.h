@@ -1,9 +1,10 @@
-#ifndef guard_pamsi
-#define guard_pamsi
+#ifndef STOPS_NAME_H
+#define STOPS_NAME_H
+#include <string>
 
 #define LICZBA_PRZYSTANKOW 178
 
-std::string Tab[] =
+std::string stops_name_list[] =
 {
     "Pusty",
     "Dworzec Nadodrze",                 //   1
@@ -11,34 +12,34 @@ std::string Tab[] =
     "Pomorska",                         //   3
     "Dmowskiego",                       //   4
     "Plac Jana Pawla II",               //   5
-    "Plac Orlat Lwowskich",             //   6
-    "Plac Legionow",                    //   7
+    "Plac Orląt Lwowskich",             //   6
+    "Plac Legionów",                    //   7
     "Arkady - Capitol",                 //   8
-    "Dworzec Glowny PKP",               //   9
-    "Pulawskiego",                      //  10
-    "Kosciuszki",                       //  11
+    "Dworzec Główny PKP",               //   9
+    "Puławskiego",                      //  10
+    "Kościuszki",                       //  11
     "Komuny Paryskiej",                 //  12
-    "Plac Wroblewskiego",               //  13
-    "Urzad Wojewodzki",                 //  14
+    "Plac Wróblewskiego",               //  13
+    "Urząd Wojewódzki",                 //  14
     "Most Grunwaldzki",                 //  15
     "Plac Grunwaldzki",                 //  16
     "Piastowska",                       //  17
     "Prusa",                            //  18
-    "Wyszynskiego",                     //  19
+    "Wyszyńskiego",                     //  19
     "Nowowiejska",                      //  20
-    "Slowianska",                       //  21
+    "Słowiańska",                       //  21
     "Biskupin",                         //  22
-    "Spoldzielcza",                     //  23
-    "Chelmonskiego",                    //  24
+    "Społdzielcza",                     //  23
+    "Chełmońskiego",                    //  24
     "Tramwajowa",                       //  25
     "Zoo",                              //  26
     "Hala Stulecia",                    //  27
     "Kliniki",                          //  28
     "Trzebnicka",                       //  29
     "Broniewskiego",                    //  30
-    "Kepinska",                         //  31
-    "Wolowska",                         //  32
-    "Poswietne",                        //  33
+    "Kępinska",                         //  31
+    "Wołowska",                         //  32
+    "Poświętne",                        //  33
     "Reja",                             //  34
     "Katedra",                          //  35
     "Galeria Dominikanska",             //  36
@@ -47,42 +48,42 @@ std::string Tab[] =
     "Rondo",                            //  39
     "Sztabowa",                         //  40
     "Hallera",                          //  41
-    "Jastrzebia",                       //  42
+    "Jastrzębia",                       //  42
     "Orla",                             //  43
     "Krzyki",                           //  44
-    "Ksiaze Male",                      //  45
-    "Glubczycka",                       //  46
-    "Karwinska",                        //  47
+    "Ksiąze Małe",                      //  45
+    "Głubczycka",                       //  46
+    "Karwińska",                        //  47
     "Park Wschodni",                    //  48
     "Armii Krajowej",                   //  49
     "Krakowska - Centrum Handlowe",     //  50
     "Krakowska",                        //  51
-    "Na Niskich Lakach",                //  52
+    "Na Niskich Ląkach",                //  52
     "Plac Zgody",                       //  53
-    "Swidnicka",                        //  54
+    "Świdnicka",                        //  54
     "Rynek",                            //  55
-    "Mlodych Technikow",                //  56
+    "Młodych Techników",                //  56
     "Plac Strzegomski",                 //  57
     "Zachodnia",                        //  58
-    "Niedzwiedzia",                     //  59
-    "Malopanewska",                     //  60
+    "Niedźwiedzia",                     //  59
+    "Małopanewska",                     //  60
     "Kwiska",                           //  61
     "DH AStra",                         //  62
     "Park Zachodni",                    //  63
     "Bajana",                           //  64
-    "Metalowcow",                       //  65
+    "Metalowców",                       //  65
     "Pilczyce",                         //  66
     "Stadion Wroclaw",                  //  67
     "Glinianki",                        //  68
-    "Kosmonautow Szpital",              //  69
+    "Kosmonautów Szpital",              //  69
     "Grabowa",                          //  70
     "Kamieniogorska",                   //  71
-    "Zlotnicka",                        //  72
+    "Złotnicka",                        //  72
     "Wschowska",                        //  73
-    "Jeleniogorska",                    //  74
-    "Lesnica",                          //  75
-    "Oporow",                           //  76
-    "Grabiszynska",                     //  77
+    "Jeleniogórska",                    //  74
+    "Leśnica",                          //  75
+    "Oporów",                           //  76
+    "Grabiszyńska",                     //  77
     "FAT",                              //  78
     "Hutmen",                           //  79
     "Bzowa",                            //  80
@@ -97,17 +98,17 @@ std::string Tab[] =
     "Uniwersytecka",                    //  89
     "Dubois",                           //  90
     "Plac Bema",                        //  91
-    "Na Szancach",                      //  92
-    "Jednosci Narodowej",               //  93
-    "Daszynskiego",                     //  94
+    "Na Szańcach",                      //  92
+    "Jedności Narodowej",               //  93
+    "Daszyńskiego",                     //  94
     "Mosty Warszawskie",                //  95
     "Kromera",                          //  96
-    "Ketrzynska",                       //  97
-    "Kwidzynska",                       //  98
-    "Gesia",                            //  99
+    "Kętrzynska",                       //  97
+    "Kwidzyńska",                       //  98
+    "Gęsia",                            //  99
     "Bociania",                         // 100
     "Kowale",                           // 101
-    "Paulinska",                        // 102
+    "Paulińska",                        // 102
     "Uniwersytet",                      // 103
     "Dworzec Autobusowy",               // 104
     "Dyrekcyjna",                       // 105
@@ -120,26 +121,26 @@ std::string Tab[] =
     "Transbud",                         // 112
     "Klimasa",                          // 113
     "Tarnogaj",                         // 114
-    "Park Poludniowy",                  // 115
-    "Pultuska",                         // 116
+    "Park Południowy",                  // 115
+    "Pułtuska",                         // 116
     "Weigla",                           // 117
     "Jaworowa",                         // 118
-    "Wisniowa",                         // 119
+    "Wiśniowa",                         // 119
     "Uniwersytet Ekonomiczny",          // 120
     "Sanocka",                          // 121
-    "Wzgorze Partyzantow",              // 122
+    "Wzgórze Partyzantów",              // 122
     "Plac Nowy Targ",                   // 123
     "Hala Targowa",                     // 124
-    "Ogrod Botaniczny",                 // 125
-    "Gornickiego",                      // 126
+    "Ogród Botaniczny",                 // 125
+    "Górnickiego",                      // 126
     "Grunwaldzka",                      // 127
     "Kochanowskiego",                   // 128
     "Chopina",                          // 129
-    "Karlowicza",                       // 130
+    "Karłowicza",                       // 130
     "Stadion Olimpijski",               // 131
     "9 Maja",                           // 132
     "Godebskiego",                      // 133
-    "Sepolno",                          // 134
+    "Sępolno",                          // 134
     "Osobowice",                        // 135
     "Most Milenijny",                   // 136
     "Osobowicka",                       // 137
@@ -150,36 +151,36 @@ std::string Tab[] =
     "Mielecka",                         // 142
     "Ojca Beyzyma",                     // 143
     "Aleja Pracy",                      // 144
-    "Kamienskiego",                     // 145
-    "Baltycka",                         // 146
+    "Kamieńskiego",                     // 145
+    "Bałtycka",                         // 146
     "Park Staromiejski",                // 147
     "Radio i Telewizja",                // 148
-    "Przyjazni",                        // 149
+    "Przyjaźni",                        // 149
     "Braterska",                        // 150
-    "Sasiedzka",                        // 151
+    "Sąsiedzka",                        // 151
     "Klecina",                          // 152
-    "Fiolkowa",                         // 153
+    "Fiołkowa",                         // 153
     "Dolmed",                           // 154
-    "Srubowa",                          // 155
-    "Wroclawski Park Przemyslowy",      // 156
-    "Gornicza",                         // 157
+    "Śrubowa",                          // 155
+    "Wrocławski Park Przemyslowy",      // 156
+    "Górnicza",                         // 157
     "Modra",                            // 158
     "Pilczycka",                        // 159
     "Kolista",                          // 160
     "Krynicka",                         // 161
     "Morwowa",                          // 162
-    "Swieradowska",                     // 163
+    "Świeradowska",                     // 163
     "Gaj",                              // 164
-    "Kozanow",                          // 165
+    "Kozanów",                          // 165
     "Kozanowska",                       // 166
     "Bujwida",                          // 167
     "Wrozamet",                         // 168
     "Piramowicza",                      // 169
-    "Kosmonautow - Nowe Zerniki",       // 170
+    "Kosmonautów - Nowe Żerniki",       // 170
     "Stadion Miejski",                  // 171
     "Forum Muzyki",                     // 172
-    "Grabiszynska - Cmentarz I",        // 173
-    "Grabiszynska - Cmentarz II",       // 174
+    "Grabiszyńska - Cmentarz I",        // 173
+    "Grabiszyńska - Cmentarz II",       // 174
     "Zawalna",                          // 175
     "Osobowicka - Cmentarz II",         // 176
     "GAJ - Petla",                      // 177
@@ -188,7 +189,4 @@ std::string Tab[] =
 
 };
 
-void Macierz(short int**, unsigned int);
-
-
-#endif
+#endif // STOPS_NAME_H

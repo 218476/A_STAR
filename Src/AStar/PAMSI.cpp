@@ -714,7 +714,7 @@ void Macierz(short int** macierz_sasiedztw, unsigned int liczba_przystankow)
     macierz_sasiedztw[SANOCKA]              [DYREKCYJNA]            = 2;
     macierz_sasiedztw[DYREKCYJNA]           [DWORZEC_AUTOBUSOWY]    = 1;
     macierz_sasiedztw[DWORZEC_AUTOBUSOWY]   [DWORZEC_GLOWNY_PKP]    = 2;
-    macierz_sasiedztw[DWORZEC_GLOWNY_PKP]   [WZGORZE_PARTYZANTOW]   = 3;
+    macierz_sasiedztw[DWORZEC_GLOWNY_PKP]   [WZGORZE_PARTYZANTOW]   = 2;
     macierz_sasiedztw[WZGORZE_PARTYZANTOW]  [GALERIA_DOMINIKASKA]   = 2;
     macierz_sasiedztw[GALERIA_DOMINIKASKA]  [PLAC_NOWY_TARG]        = 1;
     macierz_sasiedztw[PLAC_NOWY_TARG]       [HALA_TARGOWA]          = 1;

@@ -1,15 +1,11 @@
-#include "../inc/list.h"
+#include "../../Inc/AStar/list.h"
+
 int list::size()
 {
-  int i=0;
-  element *test=first;
-  while(test!=nullptr)
-    {
-      test=test->next;
-      i++;
-    }
-  return i;
+return Size;
 }
+
+
 
 element* list::search(int position){
 element *test=first;
@@ -26,7 +22,7 @@ return test;
 void list::remove(int position){
   element *temp;
   element *temp2;
-if(position==1){
+if(position==0){
 temp=first->next;
 delete first;
 first=temp;
@@ -38,6 +34,7 @@ if(size()>=position){
   temp->next=temp2->next;
   delete temp2;
   }
+Size--;
 }
 
 int list::get(int position){
@@ -55,24 +52,27 @@ temp=search(position);
 int list::add(int numb, int position){
   element *nowy = new element;
   element *temp, *temp2;
-double s=size();
+double s=Size;
   nowy->ele=numb;
-if(s!=0 && position!=0){
-if(s<position)
-position=s;
-temp=search(position);
-temp2=temp->next;
-temp->next=nowy;
-nowy->next=temp2;
+if(s!=0)
+{
+    if(s<position)
+        position=s;
+    temp=search(position);
+    temp2=temp->next;
+    temp->next=nowy;
+    nowy->next=temp2;
 }
-else if(position!=0){
-nowy->next=nullptr;
-first=nowy;}
-else{
-nowy->next=first;
-first=nowy;
+else
+{
+    nowy->next=nullptr;
+    first=nowy;
 }
-  return size();
+Size++;
+  return Size;
 }
 
-
+list::list()
+{
+    Size = 0;
+}

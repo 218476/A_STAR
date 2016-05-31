@@ -1,6 +1,6 @@
 #ifndef guard_igraph
 #define guard_igraph
-#include "../inc/stack.h"
+#include "stack.h"
 /*interface graph*/
 class igraph
 {

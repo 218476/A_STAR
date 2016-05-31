@@ -1,7 +1,7 @@
 #ifndef guard_graph
 #define guard_graph
-#include "../inc/igraph.h"
-#include "../inc/stack.h"
+#include "igraph.h"
+#include "stack.h"
 class graph: public igraph
 {
 private:

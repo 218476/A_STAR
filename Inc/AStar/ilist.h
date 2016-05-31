@@ -1,4 +1,4 @@
-#include "../inc/element.h"
+#include "element.h"
 #ifndef guard_ilist
 #define guard_ilist
 /*interface listy*/
